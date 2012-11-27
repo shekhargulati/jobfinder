@@ -12,3 +12,4 @@
 # prevent your application from stopping cleanly or starting at all.
 # Application start and stop is subject to different timeouts
 # throughout the system.
+psql -f $OPENSHIFT_REPO_DIR/src/main/resources/create-tables.sql
