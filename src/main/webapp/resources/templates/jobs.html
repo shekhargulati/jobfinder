@@ -1,0 +1,29 @@
+<dl class="dl-horizontal">
+
+	<dt>Job Id:</dt>
+	<dd>${jobId}</dd>
+	
+	<dt>Job Title:</dt>
+	<dd>${jobTitle}</dd>
+
+	<dt>Company</dt>
+	<dd>${companyName}</dd>
+	
+	<dt>Skills:</dt>
+	<dd>${skills}</dd>
+
+	<dt>Address:</dt>
+	<dd>${address}</dd>
+
+	<dt>Distance:</dt>
+	<dd>${distance}</dd>
+
+	<dt>Duration:</dt>
+	<dd>${duration}</dd>
+	
+</dl>
+<form id="applyJob" action="jobs/apply/${jobId}" method="POST">
+	<button class="btn btn-large btn-success" type="submit">Apply Job</button>
+</form>
+
+

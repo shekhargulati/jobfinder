@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="connect/status" extends="page-connect">
+		<put-attribute name="content" value="/WEB-INF/views/connect/status.jsp" />
+	</definition>
+
+	<definition name="connect/linkedinConnect" extends="page-connect">
+		<put-attribute name="content" value="/WEB-INF/views/connect/linkedinConnect.jsp" />
+	</definition>
+
+	<definition name="connect/linkedinConnected" extends="page-connect">
+		<put-attribute name="content" value="/WEB-INF/views/connect/linkedinConnected.jsp" />
+	</definition>
+
+</tiles-definitions>
