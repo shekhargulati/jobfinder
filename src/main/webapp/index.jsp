@@ -85,9 +85,10 @@
           <li><a href="contact.jsp">Contact</a></li>
 		
 		<sec:authorize access="isAuthenticated()">
-         
           <li><a href="signout">Sign Out</a></li>
-          
+         </sec:authorize>
+         <sec:authorize access="!isAuthenticated()">
+          <li><a href="signin">Sign in</a></li>
          </sec:authorize>
         </ul>
         <h3 class="muted">JobFinder</h3>
