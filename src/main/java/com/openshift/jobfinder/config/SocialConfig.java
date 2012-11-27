@@ -45,9 +45,11 @@ public class SocialConfig {
 	@Bean
 	public ProviderSignInController providerSignInController(
 			RequestCache requestCache) {
-		return new ProviderSignInController(connectionFactoryLocator,
-				usersConnectionRepository,
-				new SimpleSignInAdapter(requestCache));
+		ProviderSignInController providerSignInController = new ProviderSignInController(connectionFactoryLocator,
+						usersConnectionRepository,
+						new SimpleSignInAdapter(requestCache));
+		providerSignInController.setPostSignInUrl("/home");
+		return providerSignInController;
 	}
 
 	@Bean
